@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASTRAVITA</title>
+<meta name="description" content="ASTRAVITA: on-device behavioral health monitoring for crews on long, isolated missions. Exploratory orientation, not a clinical diagnosis.">
+<meta name="theme-color" content="#102C28">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' blob: https://cdn.jsdelivr.net; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' blob: mediastream:; connect-src 'self' data: blob: https://cdn.jsdelivr.net https://storage.googleapis.com; object-src 'none'; base-uri 'none'">
+<link rel="icon" type="image/png" href="data:image/png;base64,{{FAV}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap">
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#view">Skip to main content</a>
+<img id="logo-src" src="data:image/png;base64,{{LOGO}}" alt="" hidden>
+<div id="app"><div class="loading-block" style="justify-content:center;min-height:60vh"><span class="spinner" aria-hidden="true"></span>Loading ASTRAVITA&hellip;</div></div>
+<div class="toasts" id="toasts" aria-live="polite" aria-relevant="additions"></div>
+<div id="print-area"></div>
+<noscript><p style="padding:24px">ASTRAVITA needs JavaScript to run. All processing happens on this device.</p></noscript>
+<!-- Preloaded knowledge base used by the local orientation engine (no external AI or API). -->
+<script type="application/json" id="astravita-kb">{{KB}}</script>
+<script>
+{{JS}}
+</script>
+</body>
+</html>
